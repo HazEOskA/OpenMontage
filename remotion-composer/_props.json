@@ -1,0 +1,196 @@
+{
+  "version": "1.0",
+  "renderer_family": "explainer-data",
+  "render_runtime": "remotion",
+  "themeConfig": {
+    "primaryColor": "#00E5FF",
+    "accentColor": "#FF2BD6",
+    "backgroundColor": "#07070D",
+    "surfaceColor": "#0E0E1A",
+    "textColor": "#F5F7FF",
+    "mutedTextColor": "#8A8FB0",
+    "headingFont": "Space Grotesk",
+    "bodyFont": "Space Grotesk",
+    "monoFont": "Fira Code",
+    "chartColors": [
+      "#00E5FF",
+      "#FF2BD6",
+      "#A855F7",
+      "#39FF14",
+      "#FFB000",
+      "#FF3B3B"
+    ],
+    "captionHighlightColor": "#00E5FF",
+    "captionBackgroundColor": "rgba(7,7,13,0.78)"
+  },
+  "cuts": [
+    {
+      "id": "s1_hook",
+      "type": "text_card",
+      "text": "03:00  \u2014  SHIFT ENDS",
+      "fontSize": 110,
+      "source": "",
+      "in_seconds": 0.0,
+      "out_seconds": 4.204
+    },
+    {
+      "id": "s2_build",
+      "type": "text_card",
+      "text": "I clock out to BUILD.",
+      "fontSize": 120,
+      "source": "",
+      "in_seconds": 4.204,
+      "out_seconds": 5.71
+    },
+    {
+      "id": "s3_machine",
+      "type": "text_card",
+      "text": "Done being a machine.",
+      "fontSize": 120,
+      "color": "#FF2BD6",
+      "source": "",
+      "in_seconds": 5.71,
+      "out_seconds": 9.642
+    },
+    {
+      "id": "s4_rent",
+      "type": "text_card",
+      "text": "Rent paid.  Dream unpaid.",
+      "fontSize": 110,
+      "source": "",
+      "in_seconds": 9.642,
+      "out_seconds": 12.645
+    },
+    {
+      "id": "s5_terminal",
+      "type": "terminal_scene",
+      "terminalTitle": "~/ai-product-factory",
+      "prompt": "builder@hood",
+      "steps": [
+        {
+          "kind": "cmd",
+          "text": "claude code .",
+          "typeSpeed": 2
+        },
+        {
+          "kind": "out",
+          "text": "\u25cf booting agents..."
+        },
+        {
+          "kind": "pill",
+          "text": "Claude Code",
+          "color": "#00E5FF"
+        },
+        {
+          "kind": "cmd",
+          "text": "agents run --swarm build",
+          "typeSpeed": 2
+        },
+        {
+          "kind": "out",
+          "text": "\u2713 7 agents online  \u00b7  writing code"
+        },
+        {
+          "kind": "pill",
+          "text": "GitHub",
+          "color": "#FF2BD6"
+        },
+        {
+          "kind": "cmd",
+          "text": "git push origin night-shift",
+          "typeSpeed": 2
+        },
+        {
+          "kind": "out",
+          "text": "\u2713 deployed to production"
+        }
+      ],
+      "source": "",
+      "in_seconds": 12.645,
+      "out_seconds": 16.925
+    },
+    {
+      "id": "s6_agents",
+      "type": "kpi_grid",
+      "title": "AI AGENT SWARM",
+      "columns": 3,
+      "chartData": [
+        {
+          "label": "AGENTS ONLINE",
+          "value": 7
+        },
+        {
+          "label": "PARALLEL TASKS",
+          "value": 24
+        },
+        {
+          "label": "HUMAN TEAM",
+          "value": 1
+        }
+      ],
+      "source": "",
+      "in_seconds": 16.925,
+      "out_seconds": 19.986
+    },
+    {
+      "id": "s7_progress",
+      "type": "progress_bar",
+      "title": "PRODUCT FACTORY \u2014 BUILD",
+      "progress": 88,
+      "progressLabel": "shipping",
+      "progressColor": "#39FF14",
+      "source": "",
+      "in_seconds": 19.986,
+      "out_seconds": 22.525
+    },
+    {
+      "id": "s8_oneworker",
+      "type": "text_card",
+      "text": "One worker.  A whole factory.",
+      "fontSize": 108,
+      "source": "",
+      "in_seconds": 22.525,
+      "out_seconds": 25.319
+    },
+    {
+      "id": "s9_reveal",
+      "type": "hero_title",
+      "text": "FROM HOOD TO BUILDER",
+      "heroSubtitle": "EPISODE 01",
+      "source": "",
+      "in_seconds": 25.319,
+      "out_seconds": 27.638
+    },
+    {
+      "id": "s10_escape",
+      "type": "text_card",
+      "text": "Escape \u2014 one commit at a time.",
+      "fontSize": 96,
+      "color": "#00E5FF",
+      "source": "",
+      "in_seconds": 27.638,
+      "out_seconds": 30.42
+    },
+    {
+      "id": "s11_cta",
+      "type": "hero_title",
+      "text": "FOLLOW THE BUILD",
+      "heroSubtitle": "@ From Hood to Builder",
+      "source": "",
+      "in_seconds": 30.42,
+      "out_seconds": 33.212
+    }
+  ],
+  "audio": {
+    "narration": {
+      "src": "D:\\OsaTechGPT\\repos\\OpenMontage\\projects\\hood-to-builder-ep1\\assets\\audio\\narration.wav",
+      "volume": 1.0
+    }
+  },
+  "metadata": {
+    "project": "hood-to-builder-ep1",
+    "title": "Building an AI Company After Factory Shifts",
+    "series": "From Hood to Builder \u2014 EP.01",
+    "delivery": "all-local Remotion (Option B), Piper VO, no cloud"
+  }
+}

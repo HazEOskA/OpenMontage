@@ -1,0 +1,33 @@
+npm warn Unknown user config "store-dir". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+Bundling 6%
+Bundling 22%
+Bundling 51%
+Bundling 65%
+Bundling 71%
+Bundling 76%
+Bundling 81%
+Bundling 87%
+Bundling 92%
+Bundling 98%
+Bundling 100%
+Getting composition
+[90mComposition          Explainer[39m
+[90mCodec                h264[39m
+[90mOutput               ../projects/hood-to-builder-ep1/renders/final.mp4[39m
+[90mConcurrency          8x[39m
+Rendered 0/1027
+Rendered 1/1027, time remaining: 19m 42s
+
+[31mError: Error while downloading file:///D:/OsaTechGPT/repos/OpenMontage/projects/hood-to-builder-ep1/assets/audio/narration.wav: Error: Can only download URLs starting with http:// or https://, got "file:///D:/OsaTechGPT/repos/OpenMontage/projects/hood-to-builder-ep1/assets/audio/narration.wav"[39m
+[31m    at getClient (D:\OsaTechGPT\repos\OpenMontage\remotion-composer\node_modules\@remotion\renderer\dist\assets\read-file.js:18:11)[39m
+[31m    at D:\OsaTechGPT\repos\OpenMontage\remotion-composer\node_modules\@remotion\renderer\dist\assets\read-file.js:22:24[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at readFileWithoutRedirect (D:\OsaTechGPT\repos\OpenMontage\remotion-composer\node_modules\@remotion\renderer\dist\assets\read-file.js:21:12)[39m
+[31m    at readFile (D:\OsaTechGPT\repos\OpenMontage\remotion-composer\node_modules\@remotion\renderer\dist\assets\read-file.js:44:41)[39m
+[31m    at D:\OsaTechGPT\repos\OpenMontage\remotion-composer\node_modules\@remotion\renderer\dist\assets\download-file.js:51:34[39m
+[31m    at new Promise (<anonymous>)[39m
+[31m    at downloadFileWithoutRetries (D:\OsaTechGPT\repos\OpenMontage\remotion-composer\node_modules\@remotion\renderer\dist\assets\download-file.js:12:12)[39m
+[31m    at downloadFile (D:\OsaTechGPT\repos\OpenMontage\remotion-composer\node_modules\@remotion\renderer\dist\assets\download-file.js:122:27)[39m
+[31m    at downloadAsset (D:\OsaTechGPT\repos\OpenMontage\remotion-composer\node_modules\@remotion\renderer\dist\assets\download-and-map-assets-to-file.js:178:59)[39m
+[31m    at D:\OsaTechGPT\repos\OpenMontage\remotion-composer\node_modules\@remotion\renderer\dist\render-frame-with-option-to-reject.js:136:21[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)[39m
